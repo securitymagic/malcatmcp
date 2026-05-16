@@ -101,6 +101,7 @@ flowchart TD
 
 ### Role
 Social engineering front-end and DLL loader. Presents a credible "Free Screen Recorder" application while silently loading the `monitor.dll` payload.
+When loaded with -start recorder.exe will then load `monitor.dll` and start the connections to the malicious IPs.
 
 ### YARA Detections
 
