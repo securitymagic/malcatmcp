@@ -29,7 +29,7 @@
 
 ## Executive Summary
 
-Two files located at `windirstat\screen\` form a **two-stage SOCKS5 backconnect proxy implant** linked to the **Zergeca botnet ecosystem** deploying the **GhostSocks** commercial proxy agent.
+Two files located at `\screen\` form a **two-stage SOCKS5 backconnect proxy implant** linked to the **Zergeca botnet ecosystem** deploying the **GhostSocks** commercial proxy agent.
 
 - **`recorder.exe`** is a trojanized dropper disguised as *"Free Screen Recorder"*, built with the legitimate [Wails](https://wails.io) Go desktop framework to present a convincing GUI. It loads `monitor.dll` at runtime.
 - **`monitor.dll`** is a full **GhostSocks SOCKS5 backconnect agent** — a Go/CGO DLL that dials out to operator-controlled C2 infrastructure and turns the victim machine into a live SOCKS5 proxy exit node. It has **0 static detections on VirusTotal** due to comprehensive evasion design.
@@ -680,4 +680,4 @@ rule GhostSocks_SxcksBackConnect {
 
 ---
 
-*Report generated: 2026-05-16 | Files: `windirstat\screen\monitor.dll` + `windirstat\screen\recorder.exe`*
+*Report generated: 2026-05-16 | Files: `\screen\monitor.dll` + `\screen\recorder.exe`*
